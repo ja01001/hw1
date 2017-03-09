@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ja010.projectweek1.Main4Activity"
+    android:weightSum="1">
+    <TableRow>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="피자(15000원)"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="개수 입력" />
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="스파게티(13000원)"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="16dp" />
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="개수 입력" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="샐러드(9000원)"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="16dp" />
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="개수 입력" />
+    </TableRow>
+    <TableRow>
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="멤버쉽 카드 있음(10%할인)" />
+    </TableRow>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="금액 계산기" />
+    <TableRow>
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="주문개수"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="16dp" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="temp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="16dp" />
+    </TableRow>
+    <TableRow>
+     <TextView
+        android:id="@+id/text2"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="주문금액"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="16dp" />
+     <TextView
+        android:id="@+id/text4"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="temp2"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="16dp" />
+    </TableRow>
+
+</TableLayout>

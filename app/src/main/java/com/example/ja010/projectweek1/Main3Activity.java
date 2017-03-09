@@ -27,7 +27,8 @@ public class Main3Activity extends AppCompatActivity {
             public void onClick(View v) {
                 String Cdegree = e1.getText().toString();
                 Double FCdegree = Double.parseDouble(Cdegree)*1.8+32;
-                Toast.makeText(getApplicationContext(),"화씨온도는 "+FCdegree+"도 입니다.",Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(getApplicationContext(),String.format("화씨온도는 %.1f도 입니다.",FCdegree),Toast.LENGTH_SHORT).show();
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +36,7 @@ public class Main3Activity extends AppCompatActivity {
             public void onClick(View v) {
                 String Fdegree = e2.getText().toString();
                 Double CFdegree = (Double.parseDouble(Fdegree)-32)/1.8;
-                Toast.makeText(getApplicationContext(),"섭씨온도는 "+CFdegree+"도 입니다.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),String.format("섭씨온도는 %.1f도 입니다.",CFdegree),Toast.LENGTH_SHORT).show();
             }
         });
     }
