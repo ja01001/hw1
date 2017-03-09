@@ -30,12 +30,16 @@ public class Main2Activity extends AppCompatActivity {
 
                 int age = 2017 -Integer.parseInt(age_String)+1;
 
-                Toast.makeText(getApplicationContext(),"당신의 나이는 "+age+"입니다.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"당신의 나이는 "+age+"살 입니다.",Toast.LENGTH_SHORT).show();
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String year_String = e2.getText().toString();
+
+                int year = 2017 -Integer.parseInt(year_String)+1;
+                Toast.makeText(getApplicationContext(),"당신이 태어난 년도는"+year+"년입니다.",Toast.LENGTH_SHORT).show();
 
             }
         });
