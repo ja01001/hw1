@@ -38,7 +38,7 @@ public class Main4Activity extends AppCompatActivity {
                 String piz = e1.getText().toString();
                 String sp = e2.getText().toString();
                 String sl = e3.getText().toString();
-                if(piz.getBytes().length ==0){
+                if(piz.getBytes().length ==0){// nothing  input data is "" / so data's length == 0 으로 빈값을 측정가능
                    piz_co = 0;
                 }
                 else{
