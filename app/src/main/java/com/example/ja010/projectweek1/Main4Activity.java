@@ -35,42 +35,42 @@ public class Main4Activity extends AppCompatActivity {
                 int piz_co;
                 int sp_co;
                 int sl_co;
-                if(e1 != null){
-                    String piz = e1.getText().toString();
-                   piz_co = Integer.parseInt(piz);
+                String piz = e1.getText().toString();
+                String sp = e2.getText().toString();
+                String sl = e3.getText().toString();
+                if(piz.getBytes().length ==0){
+                   piz_co = 0;
                 }
                 else{
-                    piz_co =0;
+                    piz_co =Integer.parseInt(piz);;
                 }
-                if(e2 != null){
-                    String sp = e2.getText().toString();
-                    sp_co = Integer.parseInt(sp);
-                }
-                else{
-                     sp_co =0;
-                }
-                if(e3 != null){
-                    String sl = e3.getText().toString();
-                    sl_co =Integer.parseInt(sl);
+                if(sp.getBytes().length ==0){
+                    sp_co = 0;
                 }
                 else{
+                     sp_co =Integer.parseInt(sp);
+                }
+                if(sl.getBytes().length ==0){
                     sl_co =0;
+                }
+                else{
+                    sl_co =Integer.parseInt(sl);
                 }
 
 
                 int result1 = piz_co+sp_co+sl_co;
 
-                double result2;
+                int result2;
                 if(c1.isChecked()){
-                   result2 = (piz_co*15000+sp_co*13000+sl_co*9000)*0.9;
+                   result2 = (int)((piz_co*15000+sp_co*13000+sl_co*9000)*0.9);
                 }
                 else{
 
-                    result2 = (piz_co*15000+sp_co*13000+sl_co*9000);
+                    result2 = (int)(piz_co*15000+sp_co*13000+sl_co*9000);
                 }
 
 
-                //Toast.makeText(getApplicationContext(),""+v,Toast.LENGTH_LONG).show();
+                //test:Toast.makeText(getApplicationContext(),""+piz,Toast.LENGTH_LONG).show();
 
                 t1.setText(result1+"개");
                 t2.setText(result2+"원");
