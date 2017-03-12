@@ -50,6 +50,7 @@ public class Main5Activity extends AppCompatActivity {
                     num2 = Integer.parseInt(st_num2);
                 }
                 int result = num1+num2;
+                Toast.makeText(getApplicationContext(),"더하기 계산 결과는 "+result+"입니다.",Toast.LENGTH_SHORT).show();
             }
 
         });
@@ -73,7 +74,8 @@ public class Main5Activity extends AppCompatActivity {
                 } else {
                     num2 = Integer.parseInt(st_num2);
                 }
-                int result = num1 - num2;
+                double result = num1 - num2;
+                Toast.makeText(getApplicationContext(),"빼기 계산 결과는 "+result+"입니다.",Toast.LENGTH_SHORT).show();
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
@@ -99,7 +101,8 @@ public class Main5Activity extends AppCompatActivity {
                 else{
                     num2 = Integer.parseInt(st_num2);
                 }
-                int result = num1+num2;
+                int result = num1*num2;
+                Toast.makeText(getApplicationContext(),"곱하기 계산 결과는 "+result+"입니다.",Toast.LENGTH_SHORT).show();
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
@@ -122,7 +125,9 @@ public class Main5Activity extends AppCompatActivity {
                 } else {
                     num2 = Integer.parseInt(st_num2);
                 }
-                int result = num1 + num2;
+                float result = num1 + num2;
+                Toast.makeText(getApplicationContext(),"나누기 계산 결과는 "+(int)result+"입니다.",Toast.LENGTH_SHORT).show();
+
             }
         });
     }
