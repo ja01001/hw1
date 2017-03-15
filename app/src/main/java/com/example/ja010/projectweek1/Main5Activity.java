@@ -128,7 +128,7 @@ public class Main5Activity extends AppCompatActivity {
                 /*if (st_num2.equals("0")){
                     e2.requestFocus();
                     Toast.makeText(getApplicationContext(), "값을 입력하세요.", Toast.LENGTH_SHORT).show();
-                }
+                } // 실수
                 else*/ if (st_num1.getBytes().length == 0) {
                     e1.requestFocus();
                     Toast.makeText(getApplicationContext(), "값을 입력하세요.", Toast.LENGTH_SHORT).show();
