@@ -125,11 +125,11 @@ public class Main5Activity extends AppCompatActivity {
                 boolean b = false;
                 String st_num1 = e1.getText().toString();
                 String st_num2 = e2.getText().toString();
-                if (st_num2.equals("0")){
+                /*if (st_num2.equals("0")){
                     e2.requestFocus();
                     Toast.makeText(getApplicationContext(), "값을 입력하세요.", Toast.LENGTH_SHORT).show();
                 }
-                else if (st_num1.getBytes().length == 0) {
+                else*/ if (st_num1.getBytes().length == 0) {
                     e1.requestFocus();
                     Toast.makeText(getApplicationContext(), "값을 입력하세요.", Toast.LENGTH_SHORT).show();
                 } else if (st_num2.getBytes().length == 0) {
@@ -140,18 +140,20 @@ public class Main5Activity extends AppCompatActivity {
                 else {
                     num1 = Integer.parseInt(st_num1);
                     num2 = Integer.parseInt(st_num2);
+
                     a = true;
                     b = true;
                 }
-                float result = (num1 /num2);
-                if (Float.isInfinite(result)){
-                    result =0;
+
+                int result;
+                if(num2 ==0){
+                    result  =0;
                 }
-                else if(Float.isNaN(result)){
-                    result = 0;
+                else{
+                    result = (int)(num1/num2);
                 }
 
-                Toast.makeText(getApplicationContext(),"나누기 계산 결과는 "+(int)result+"입니다.",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"나누기 계산 결과는 "+result+"입니다.",Toast.LENGTH_SHORT).show();
 
             }
         });
